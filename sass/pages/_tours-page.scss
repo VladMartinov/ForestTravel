@@ -1,0 +1,32 @@
+/* Inner Page Tours */
+
+.inner-page-tours-header {
+  margin-bottom: 60px;
+  text-align: center;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    margin-bottom: 40px;
+
+    & .main-header {
+      line-height: 1.3;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    & .main-header {
+      line-height: 1.286;
+    }
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    margin-bottom: 30px;
+
+    & .main-header {
+      font-size: 28px;
+      line-height: 1;
+    }
+  }
+}

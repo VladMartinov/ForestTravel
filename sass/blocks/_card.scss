@@ -1,0 +1,183 @@
+/* Cards */
+
+.cards-first-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    & > *:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    margin-bottom: 20px;
+
+    & > *:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.cards-second-row {
+  display: flex;
+  justify-content: space-between;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    flex-direction: column;
+
+    & > *:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    & > *:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.cards-second-row-column > *:not(:last-child) {
+  margin-bottom: 30px;
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    margin-bottom: 20px;
+  }
+}
+
+.card-link-wrapper {
+  display: block;
+  color: #ffffff;
+
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/* Card */
+
+.card {
+  width: 570px;
+
+  img {
+    width: 100%;
+  }
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    width: 420px;
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    width: 100%;
+  }
+}
+
+.card.bigger {
+  width: 670px;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    width: 495px;
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    width: 100%;
+  }
+}
+
+.card.small {
+  width: 470px;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    width: 345px;
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    width: 100%;
+  }
+}
+
+.card-title-wrapper {
+  display: flex;
+  align-items: center;
+
+  padding: 0 30px;
+  height: 80px;
+
+  background-color: #a6a6a6;
+  color: #ffffff;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    padding: 0 20px;
+    height: 60px;
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    padding: 0 25px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    padding: 0 15px;
+    height: 50px;
+  }
+}
+
+.card.extreme-color .card-title-wrapper {
+  background-color: #c1b19b;
+}
+
+.card.adventures-color .card-title-wrapper {
+  background-color: #66b0be;
+}
+
+.card.tracking-color .card-title-wrapper {
+  background-color: #876f56;
+}
+
+.card.jungle-color .card-title-wrapper {
+  background-color: #27695e;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.286;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.292;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
